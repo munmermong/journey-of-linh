@@ -1,97 +1,88 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Linh's Journey | Comments</title>
+  <title>Comments | Phuong Linh</title>
   <link rel="stylesheet" href="websystems.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="websystems.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- Navigation -->
   <nav class="navbar">
-    <div class="left-nav">
-      <a href="index.html">Home</a>
-    </div>
-
-    <div class="right-nav">
-      <a href="past.html">My past</a>
-      <a href="future.html">My future</a>
-      <a href="comments.html">Comment</a>
+    <a class="nav-home" href="index.html">Home</a>
+    <div class="nav-links">
+      <a href="past.html">My Past</a>
+      <a href="future.html">My Future</a>
+      <a href="comments.html">Comments</a>
     </div>
   </nav>
 
-
-  <!-- Cover -->
-  <header class="cover past-cover">
-    <div class="past-cover-top">
-      <p>BEHIND THE DESIGN</p>
-    </div>
-
-    <div class="past-cover-text">
-      <h1 id="past-title">Comments</h1>
-      <p>Exploring the structure and design of my website</p>
-    </div>
-
-    <div class="past-cover-bottom">
-      <p>Structure • Design • Accessibility</p>
-    </div>
+  <header class="page-cover">
+    <p class="cover-eyebrow">BEHIND THE WEBSITE</p>
+    <p class="page-cover-number">03</p>
+    <h1>Comments</h1>
+    <p class="cover-subtitle">A reflection on the design and development.</p>
   </header>
 
+  <main class="page-layout comments-layout">
 
-  <!-- Main content -->
-  <main class="comments-content">
+    <div class="main-content comments-content">
 
-    <div class="comments-main">
-
-      <!-- 01. Overall Website Structure -->
-      <section class="comments-section">
-
-        <h2 id="overall-structure">
-          <span class="section-number">01.</span>
-          Overall Website Structure
-        </h2>
-
+      <section class="comments-section" id="overall-structure">
+        <h2><span class="section-number">01.</span> Overall Website Structure</h2>
         <p>
-          This personal portfolio presents my experiences, learning journey
-          and future aspirations in computing. It contains four connected
-          pages:
+          My website is a personal portfolio that introduces me and shares
+          my journey in computing. It is divided into four pages, each
+          focusing on a different part of my story. The navigation bar
+          allows visitors to move between pages, while the footer provides
+          another way to access the main sections.
         </p>
 
-        <ul class="comments-list">
-          <li><strong>Home</strong> — An introduction to me and my journey.</li>
-          <li><strong>My Past</strong> — Previous experiences and learning progress.</li>
-          <li><strong>My Future</strong> — Goals, ambitions and future plans.</li>
-          <li><strong>Comments</strong> — The website's structure and design decisions.</li>
-        </ul>
-
-        <p>
-          Visitors can move between pages using the navigation bar, footer
-          links or the section timeline.
-        </p>
-
+        <div class="table-wrap">
+          <table class="comments-table">
+            <thead>
+              <tr>
+                <th>Page</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Home</td>
+                <td>Introduces me and gives an overview of my journey.</td>
+              </tr>
+              <tr>
+                <td>My Past</td>
+                <td>Explores my earlier experiences and development in computing.</td>
+              </tr>
+              <tr>
+                <td>My Future</td>
+                <td>Shares my ambitions, goals and possible career directions.</td>
+              </tr>
+              <tr>
+                <td>Comments</td>
+                <td>Explains the website's structure, design and implementation.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
-
-      <!-- 02. Internal Page Structure -->
-      <section class="comments-section">
-
-        <h2 id="internal-structure">
-          <span class="section-number second-number">02.</span>
-          Internal Page Structure
-        </h2>
-
+      <section class="comments-section" id="internal-structure">
+        <h2><span class="section-number">02.</span> Internal Page Structure</h2>
         <p>
-          All four pages follow a consistent layout, making the website
-          easier to understand and navigate.
+          All four pages follow a consistent layout to make the website
+          easier to navigate. The navigation bar appears at the top,
+          followed by a page cover and the main content. The main area
+          uses two columns: the wider column contains the page information,
+          while the narrower column contains the journey timeline. The
+          footer appears at the bottom of every page.
         </p>
 
-        <div class="comments-table-wrap">
+        <div class="table-wrap">
           <table class="comments-table">
             <thead>
               <tr>
@@ -99,176 +90,152 @@
                 <th>Purpose</th>
               </tr>
             </thead>
-
             <tbody>
               <tr>
-                <td>Navigation bar</td>
-                <td>Links to the four main pages.</td>
+                <td>Navigation Bar</td>
+                <td>Provides links to the other pages.</td>
               </tr>
-
               <tr>
-                <td>Cover</td>
-                <td>Introduces each page with a title and subtitle.</td>
+                <td>Page Cover</td>
+                <td>Displays the page title and a short introduction.</td>
               </tr>
-
               <tr>
-                <td>Main content</td>
-                <td>Displays information in a two-column layout.</td>
+                <td>Main Content</td>
+                <td>Contains the paragraphs, tables, lists and other information.</td>
               </tr>
-
               <tr>
-                <td>Journey timeline</td>
-                <td>Links directly to sections within the current page.</td>
+                <td>Journey Timeline</td>
+                <td>Provides links to the main pages and highlights the current page.</td>
               </tr>
-
               <tr>
                 <td>Footer</td>
-                <td>Provides additional navigation and design credits.</td>
+                <td>Contains additional navigation links and credits.</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-      </section>
-
-
-      <!-- 03. CSS Styles Used -->
-      <section class="comments-section">
-
-        <h2 id="css-styles">
-          <span class="section-number">03.</span>
-          CSS Styles Used
-        </h2>
-
+        <h3 class="comments-subheading">Website and Page Structure Diagrams</h3>
         <p>
-          CSS controls the website's layout, appearance and interactive
-          effects. These are some of the main selectors used:
+          The diagrams below illustrate the overall website structure
+          and the common layout shared by all four pages.
         </p>
 
-        <div class="comments-table-wrap">
+        <figure class="comments-diagram">
+          <img
+            src="image/website-diagrams.png"
+            alt="Two diagrams showing the four website pages, shared navigation and footer, and the internal page layout">
+          <figcaption>
+            Figure 1: Overall website structure and internal page layout.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="comments-section" id="css-styles">
+        <h2><span class="section-number">03.</span> CSS Styles</h2>
+        <p>
+          CSS is used to control the appearance and layout of the website.
+          I created reusable styles so that common elements, such as the
+          navigation bar, page covers, timeline and footer, remain
+          consistent across all pages.
+        </p>
+
+        <div class="table-wrap">
           <table class="comments-table">
             <thead>
               <tr>
-                <th>Selector</th>
-                <th>Type</th>
+                <th>CSS Selector</th>
                 <th>Purpose</th>
               </tr>
             </thead>
-
             <tbody>
               <tr>
                 <td><code>body</code></td>
-                <td>Element</td>
-                <td>Sets the general font, text colour and background.</td>
+                <td>Sets the main font, text colour and background colour.</td>
               </tr>
-
               <tr>
                 <td><code>.navbar</code></td>
-                <td>Class</td>
-                <td>Arranges and positions navigation links.</td>
+                <td>Styles the navigation bar and its links.</td>
               </tr>
-
               <tr>
                 <td><code>.cover</code></td>
-                <td>Class</td>
-                <td>Controls the page cover layout.</td>
+                <td>Controls the layout of the homepage cover.</td>
               </tr>
-
               <tr>
                 <td><code>#cover-name</code></td>
-                <td>ID</td>
-                <td>Styles the main name heading on Home.</td>
+                <td>Styles the main name displayed on the homepage.</td>
               </tr>
-
               <tr>
                 <td><code>.content</code></td>
-                <td>Class</td>
-                <td>Creates the Home page's two-column layout.</td>
+                <td>Controls the main content area.</td>
               </tr>
-
               <tr>
                 <td><code>.timeline-item</code></td>
-                <td>Class</td>
-                <td>Styles the links in the journey timeline.</td>
+                <td>Styles each link in the journey timeline.</td>
               </tr>
-
               <tr>
                 <td><code>:hover</code></td>
-                <td>Pseudo-class</td>
-                <td>Changes the appearance of links when hovered over.</td>
+                <td>Changes the appearance of elements when the pointer moves over them.</td>
               </tr>
-
               <tr>
                 <td><code>@media</code></td>
-                <td>Media query</td>
-                <td>Adjusts the layout for smaller screens.</td>
+                <td>Adjusts the layout for smaller screen sizes.</td>
               </tr>
             </tbody>
           </table>
         </div>
 
+        <h3 class="comments-subheading">Examples of CSS Properties</h3>
+        <ul class="comments-list">
+          <li><code>display: grid;</code> creates the two-column page layout.</li>
+          <li><code>position: sticky;</code> keeps the journey timeline visible while scrolling.</li>
+          <li><code>border-radius</code> gives selected elements rounded corners.</li>
+          <li><code>transition</code> makes hover effects appear more smoothly.</li>
+          <li><code>max-width</code> helps control the width of content.</li>
+        </ul>
       </section>
 
-
-      <!-- 04. Graphic Design -->
-      <section class="comments-section">
-
-        <h2 id="graphic-design">
-          <span class="section-number second-number">04.</span>
-          Graphic Design
-        </h2>
-
+      <section class="comments-section" id="graphic-design">
+        <h2><span class="section-number">04.</span> Graphic Design</h2>
         <p>
-          The design uses warm, neutral colours to create a calm and personal
-          atmosphere.
+          I chose a warm and neutral colour palette to create a calm,
+          personal atmosphere. The colours are used consistently across
+          the pages to help the website feel connected without making
+          the content difficult to read.
         </p>
 
-        <div class="comments-table-wrap">
-          <table class="comments-table colour-table">
-            <thead>
-              <tr>
-                <th>Colour</th>
-                <th>Code</th>
-                <th>Use</th>
-              </tr>
-            </thead>
+        <h3 class="comments-subheading">Colour Palette</h3>
 
-            <tbody>
-              <tr>
-                <td><span class="colour-swatch cream"></span> Cream</td>
-                <td><code>#FAF6EA</code></td>
-                <td>Main background</td>
-              </tr>
-
-              <tr>
-                <td><span class="colour-swatch beige"></span> Beige</td>
-                <td><code>#E8DCC5</code></td>
-                <td>Cover and footer</td>
-              </tr>
-
-              <tr>
-                <td><span class="colour-swatch brown"></span> Brown</td>
-                <td><code>#463D35</code></td>
-                <td>Main text</td>
-              </tr>
-
-              <tr>
-                <td><span class="colour-swatch terracotta"></span> Terracotta</td>
-                <td><code>#C58B70</code></td>
-                <td>Highlights and hover effects</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="colour-list">
+          <div class="colour-item">
+            <span class="colour-swatch colour-background"></span>
+            <span><strong>#FAF6EA</strong> — Main background</span>
+          </div>
+          <div class="colour-item">
+            <span class="colour-swatch colour-box"></span>
+            <span><strong>#E8DCC5</strong> — Content boxes and highlights</span>
+          </div>
+          <div class="colour-item">
+            <span class="colour-swatch colour-accent"></span>
+            <span><strong>#C58B70</strong> — Accent colour and active links</span>
+          </div>
+          <div class="colour-item">
+            <span class="colour-swatch colour-muted"></span>
+            <span><strong>#8F7965</strong> — Secondary text</span>
+          </div>
+          <div class="colour-item">
+            <span class="colour-swatch colour-text"></span>
+            <span><strong>#463D35</strong> — Main text</span>
+          </div>
         </div>
 
         <h3 class="comments-subheading">Typography</h3>
-
         <ul class="comments-list">
           <li>
             <strong>Libre Baskerville:</strong> Main body text and headings.
           </li>
           <li>
-            <strong class="font-better">Better Together</strong>:
+            <strong class="font-better">Better Together:</strong>
             Decorative headings.
           </li>
           <li>
@@ -277,157 +244,118 @@
           </li>
         </ul>
 
-        <h3 class="comments-subheading">Layout</h3>
-
-        <ul class="comments-list">
-          <li>Two-column content layout.</li>
-          <li>Consistent spacing and section numbering.</li>
-          <li>Sticky navigation and journey timeline.</li>
-          <li>Responsive layout for smaller screens.</li>
-        </ul>
-
+        <p>
+          I used different font sizes and weights to establish a clear
+          visual hierarchy. Larger headings help separate sections, while
+          smaller text is used for descriptions and supporting information.
+        </p>
       </section>
 
-
-      <!-- 05. Accessibility -->
-      <section class="comments-section">
-
-        <h2 id="alternative-text">
-          <span class="section-number">05.</span>
-          Alternative Text and CSS Accessibility
-        </h2>
-
+      <section class="comments-section" id="alternative-text">
+        <h2><span class="section-number">05.</span> Accessibility and Other Considerations</h2>
         <p>
-          The website uses HTML and CSS features to make its content easier
-          to understand and navigate.
+          I considered accessibility and usability while developing the
+          website. Images include alternative text so that their content
+          can be understood by visitors using screen readers. I also used
+          semantic HTML elements to give the page a clearer structure.
         </p>
 
         <ul class="comments-list">
           <li>
             <strong>Alternative text:</strong> Images include descriptive
-            <code>alt</code> attributes for screen readers and when images
-            cannot load.
+            <code>alt</code> attributes.
           </li>
-
           <li>
             <strong>Semantic HTML:</strong> Elements such as
-            <code>nav</code>, <code>header</code>, <code>main</code>,
-            <code>section</code> and <code>footer</code> organise the content.
+            <code>header</code>, <code>nav</code>, <code>main</code>,
+            <code>section</code>, <code>aside</code> and
+            <code>footer</code> organise the content.
           </li>
-
-          <li>
-            <strong>CSS disabled:</strong> Text and links remain available,
-            but the visual layout, colours, fonts and timeline styling
-            are no longer applied.
-          </li>
-
           <li>
             <strong>Responsive design:</strong> Media queries adjust the
             layout for smaller screens.
           </li>
+          <li>
+            <strong>Readable content:</strong> Text is left-aligned with
+            spacing between sections to make reading easier.
+          </li>
+          <li>
+            <strong>Navigation:</strong> Links are provided consistently
+            across the website.
+          </li>
         </ul>
 
+        <p>
+          I also considered how the website would appear if CSS were
+          disabled. The HTML structure still keeps the content in a
+          logical order, allowing visitors to understand the information
+          even without the visual styling.
+        </p>
       </section>
 
     </div>
 
-
-    <!-- Right column: Journey timeline -->
     <aside class="journey">
-
-      <h2>Explore My Journey</h2>
+      <h2>My Journey</h2>
+      <p class="journey-intro">Explore the different chapters of my story.</p>
 
       <div class="timeline">
-
-        <a href="#overall-structure" class="timeline-item">
+        <a class="timeline-item" href="index.html">
           <span class="dot"></span>
-          <span class="timeline-text">Overall Website Structure</span>
+          <span class="timeline-text">Home</span>
         </a>
-
-        <a href="#internal-structure" class="timeline-item">
+        <a class="timeline-item" href="past.html">
           <span class="dot"></span>
-          <span class="timeline-text">Internal Page Structure</span>
+          <span class="timeline-text">My Past</span>
         </a>
-
-        <a href="#css-styles" class="timeline-item">
+        <a class="timeline-item" href="future.html">
           <span class="dot"></span>
-          <span class="timeline-text">CSS Styles Used</span>
+          <span class="timeline-text">My Future</span>
         </a>
-
-        <a href="#graphic-design" class="timeline-item">
+        <a class="timeline-item active" href="comments.html">
           <span class="dot"></span>
-          <span class="timeline-text">Graphic Design</span>
+          <span class="timeline-text">Comments</span>
         </a>
-
-        <a href="#alternative-text" class="timeline-item">
-          <span class="dot"></span>
-          <span class="timeline-text">Alternative Text and CSS Accessibility</span>
-        </a>
-
       </div>
 
-      <img
-        src="image/cmt.jpg"
-        alt="A photograph accompanying the website reflection"
-        class="timeline-photo">
-
+      <img class="journey-image" src="image/cmt.jpg" alt="A photograph representing the design and development of my website">
     </aside>
 
   </main>
 
-
-  <!-- Footer -->
   <footer class="site-footer">
-
     <div class="footer-content">
 
       <div class="footer-about">
-        <h2>Phuong Linh</h2>
-        <p>A journey to my computing.</p>
-        <p>
-          Exploring my experiences, interests and aspirations
-          in the world of computing and technology.
-        </p>
+        <h3>Phuong Linh</h3>
+        <p class="footer-tagline">A journey of me.</p>
+        <p>A little space to share my experiences, interests and journey in computing.</p>
       </div>
 
       <div class="footer-links">
         <h3>Explore</h3>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="past.html">My Past</a></li>
-          <li><a href="future.html">My Future</a></li>
-          <li><a href="comments.html">Comments</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="past.html">My Past</a>
+        <a href="future.html">My Future</a>
+        <a href="comments.html">Website Reflection</a>
       </div>
 
       <div class="footer-credits">
         <h3>Credits</h3>
-
-        <div class="credit-group">
-          <p class="credit-heading">Photography</p>
-          <p>Nguyen Vinh Thien Truc</p>
-        </div>
-
-        <div class="credit-group">
-          <p class="credit-heading">Fonts</p>
-          <a href="https://www.dafont.com/better-together-script.charmap?f=0"
-             target="_blank" rel="noopener noreferrer">
-            Better Together
-          </a>
-          <a href="https://www.dafont.com/simple-handmade-2.font?text=a+journey+of+me&back=theme"
-             target="_blank" rel="noopener noreferrer">
-            Simple Handmade
-          </a>
-        </div>
+        <p>Photography: Nguyen Vinh Thien Truc</p>
+        <p>Fonts:
+          <a href="https://www.dafont.com/better-together-script.charmap?f=0" target="_blank" rel="noopener noreferrer">Better Together</a>
+          and
+          <a href="https://www.dafont.com/simple-handmade-2.font?text=a+journey+of+me&amp;back=theme" target="_blank" rel="noopener noreferrer">Simple Handmade</a>
+        </p>
       </div>
 
     </div>
 
     <div class="footer-bottom">
       <p>© 2026 Phuong Linh. All rights reserved.</p>
-      <p><span>A place of memory</span></p>
+      <p>A place of memory.</p>
     </div>
-
   </footer>
 
 </body>
