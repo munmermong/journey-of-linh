@@ -1,88 +1,184 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comments | Phuong Linh</title>
+  <title>Linh's Journey | Comments</title>
   <link rel="stylesheet" href="websystems.css">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&amp;display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- Navigation -->
   <nav class="navbar">
-    <a class="nav-home" href="index.html">Home</a>
-    <div class="nav-links">
+    <div class="left-nav">
+      <a href="index.html">Home</a>
+    </div>
+
+    <div class="right-nav">
       <a href="past.html">My Past</a>
       <a href="future.html">My Future</a>
       <a href="comments.html">Comments</a>
     </div>
   </nav>
 
-  <header class="page-cover">
-    <p class="cover-eyebrow">BEHIND THE WEBSITE</p>
-    <p class="page-cover-number">03</p>
-    <h1>Comments</h1>
-    <p class="cover-subtitle">A reflection on the design and development.</p>
+
+  <!-- Cover -->
+  <header class="cover past-cover">
+    <div class="past-cover-top">
+      <p>BEHIND THE DESIGN</p>
+    </div>
+
+    <div class="past-cover-text">
+      <h1 id="past-title">Comments</h1>
+      <p>Exploring the structure and design of my website</p>
+    </div>
+
+    <div class="past-cover-bottom">
+      <p>Structure • Design • Accessibility</p>
+    </div>
   </header>
 
-  <main class="page-layout comments-layout">
 
-    <div class="main-content comments-content">
+  <!-- Main content -->
+  <main class="comments-content">
 
-      <section class="comments-section" id="overall-structure">
-        <h2><span class="section-number">01.</span> Overall Website Structure</h2>
+    <div class="comments-main">
+
+      <!-- 01. Overall Website Structure -->
+      <section class="comments-section">
+
+        <h2 id="overall-structure">
+          <span class="section-number">01.</span>
+          Overall Website Structure
+        </h2>
+
         <p>
-          My website is a personal portfolio that introduces me and shares
-          my journey in computing. It is divided into four pages, each
-          focusing on a different part of my story. The navigation bar
-          allows visitors to move between pages, while the footer provides
-          another way to access the main sections.
+          This personal portfolio presents my experiences, learning journey
+          and future aspirations in computing. Rather than a strict
+          hub-and-spoke model where every trip has to pass back through the
+          home page, I built it as a small connected network: all four pages
+          share the same navigation bar, so a visitor can jump directly from
+          any one page to any other without detouring through Home first.
+          The four pages are:
         </p>
 
-        <div class="table-wrap">
-          <table class="comments-table">
-            <thead>
-              <tr>
-                <th>Page</th>
-                <th>Purpose</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Home</td>
-                <td>Introduces me and gives an overview of my journey.</td>
-              </tr>
-              <tr>
-                <td>My Past</td>
-                <td>Explores my earlier experiences and development in computing.</td>
-              </tr>
-              <tr>
-                <td>My Future</td>
-                <td>Shares my ambitions, goals and possible career directions.</td>
-              </tr>
-              <tr>
-                <td>Comments</td>
-                <td>Explains the website's structure, design and implementation.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <ul class="comments-list">
+          <li><strong>Home (index.html)</strong> - A short introduction to me and an entry point into the rest of the site.</li>
+          <li><strong>My Past (past.html)</strong> - Previous experiences and learning progress with computing.</li>
+          <li><strong>My Future (future.html)</strong> - Goals, ambitions and future plans in computing.</li>
+          <li><strong>Comments (comments.html)</strong> - This page - a reflection on the site's own structure and design decisions.</li>
+        </ul>
+
+        <p>
+          Three navigation layers reinforce each other on every page: the
+          sticky top navbar (always visible, even while scrolling), the
+          footer link list (reached after reading a page fully, for visitors
+          who scroll rather than jump), and the "Explore My Journey" timeline
+          sidebar, which links to sections <em>within</em> the current page
+          rather than between pages. The diagram below shows how the four
+          pages connect to each other.
+        </p>
+
+        <figure class="diagram-figure">
+          <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="sitemap-title sitemap-desc">
+            <title id="sitemap-title">Site map of the four connected pages</title>
+            <desc id="sitemap-desc">Home, My Past, My Future and Comments are each directly connected to one another through the shared navigation bar, forming a fully connected network rather than a simple hub and spoke.</desc>
+
+            <!-- connecting lines (drawn first, sit behind the boxes) -->
+            <line x1="320" y1="70" x2="140" y2="220" stroke="#C58B70" stroke-width="2" />
+            <line x1="320" y1="70" x2="500" y2="220" stroke="#C58B70" stroke-width="2" />
+            <line x1="320" y1="70" x2="320" y2="300" stroke="#C58B70" stroke-width="2" />
+            <line x1="140" y1="220" x2="500" y2="220" stroke="#A88F78" stroke-width="2" stroke-dasharray="6 5" />
+            <line x1="140" y1="220" x2="320" y2="300" stroke="#A88F78" stroke-width="2" stroke-dasharray="6 5" />
+            <line x1="500" y1="220" x2="320" y2="300" stroke="#A88F78" stroke-width="2" stroke-dasharray="6 5" />
+
+            <!-- Home node -->
+            <rect x="250" y="42" width="140" height="56" rx="10" fill="#E8DCC5" stroke="#C58B70" stroke-width="2" />
+            <text x="320" y="75" text-anchor="middle" font-family="LibreBaskerville, Georgia, serif" font-size="17" font-weight="700" fill="#463D35">Home</text>
+
+            <!-- Past node -->
+            <rect x="70" y="192" width="140" height="56" rx="10" fill="#E8DCC5" stroke="#C58B70" stroke-width="2" />
+            <text x="140" y="225" text-anchor="middle" font-family="LibreBaskerville, Georgia, serif" font-size="16" font-weight="700" fill="#463D35">My Past</text>
+
+            <!-- Future node -->
+            <rect x="430" y="192" width="140" height="56" rx="10" fill="#E8DCC5" stroke="#C58B70" stroke-width="2" />
+            <text x="500" y="225" text-anchor="middle" font-family="LibreBaskerville, Georgia, serif" font-size="16" font-weight="700" fill="#463D35">My Future</text>
+
+            <!-- Comments node -->
+            <rect x="250" y="272" width="140" height="56" rx="10" fill="#E8DCC5" stroke="#C58B70" stroke-width="2" />
+            <text x="320" y="305" text-anchor="middle" font-family="LibreBaskerville, Georgia, serif" font-size="16" font-weight="700" fill="#463D35">Comments</text>
+
+            <!-- legend -->
+            <line x1="40" y1="342" x2="70" y2="342" stroke="#C58B70" stroke-width="2" />
+            <text x="78" y="347" font-family="LibreBaskerville, Georgia, serif" font-size="12" fill="#665849">navbar + footer link (both directions)</text>
+            <line x1="330" y1="342" x2="360" y2="342" stroke="#A88F78" stroke-width="2" stroke-dasharray="6 5" />
+            <text x="368" y="347" font-family="LibreBaskerville, Georgia, serif" font-size="12" fill="#665849">same links, shown separately for clarity</text>
+          </svg>
+          <figcaption>
+            Fig. 1 - Every page links directly to every other page through
+            the shared navbar and footer, so the site behaves as a fully
+            connected network rather than a strict home-centred hierarchy.
+          </figcaption>
+        </figure>
+
       </section>
 
-      <section class="comments-section" id="internal-structure">
-        <h2><span class="section-number">02.</span> Internal Page Structure</h2>
+
+      <!-- 02. Internal Page Structure -->
+      <section class="comments-section">
+
+        <h2 id="internal-structure">
+          <span class="section-number second-number">02.</span>
+          Internal Page Structure
+        </h2>
+
         <p>
-          All four pages follow a consistent layout to make the website
-          easier to navigate. The navigation bar appears at the top,
-          followed by a page cover and the main content. The main area
-          uses two columns: the wider column contains the page information,
-          while the narrower column contains the journey timeline. The
-          footer appears at the bottom of every page.
+          All four pages follow the same block order from top to bottom, so
+          once a visitor learns the pattern on one page, every other page
+          reads the same way. The diagram below shows that stacked structure,
+          and the table underneath explains what each block is for.
         </p>
 
-        <div class="table-wrap">
+        <figure class="diagram-figure">
+          <svg viewBox="0 0 520 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="layout-title layout-desc">
+            <title id="layout-title">Stacked block layout shared by every page</title>
+            <desc id="layout-desc">From top to bottom: a sticky navigation bar, a cover header, a two-column main area with primary content on the left and a sticky journey sidebar on the right, and a footer.</desc>
+
+            <!-- Navbar -->
+            <rect x="20" y="16" width="480" height="48" rx="6" fill="#FAF6EA" stroke="#C58B70" stroke-width="2" />
+            <text x="260" y="45" text-anchor="middle" font-family="LibreBaskerville, Georgia, serif" font-size="15" font-weight="700" fill="#463D35">.navbar - sticky, top of every page</text>
+
+            <!-- Cover -->
+            <rect x="20" y="78" width="480" height="66" rx="6" fill="#E8DCC5" stroke="#C58B70" stroke-width="2" />
+            <text x="260" y="116" text-anchor="middle" font-family="LibreBaskerville, Georgia, serif" font-size="15" font-weight="700" fill="#463D35">.cover - page title and subtitle</text>
+
+            <!-- Main content column -->
+            <rect x="20" y="158" width="320" height="220" rx="6" fill="#F5EFE2" stroke="#D8CBB8" stroke-width="2" />
+            <text x="180" y="186" text-anchor="middle" font-family="LibreBaskerville, Georgia, serif" font-size="14" font-weight="700" fill="#463D35">.main-content / .past-main etc.</text>
+            <text x="180" y="208" text-anchor="middle" font-family="LibreBaskerville, Georgia, serif" font-size="12" fill="#665849">paragraphs, tables and info cards -</text>
+            <text x="180" y="226" text-anchor="middle" font-family="LibreBaskerville, Georgia, serif" font-size="12" fill="#665849">the page's actual content</text>
+
+            <!-- Sidebar column -->
+            <rect x="354" y="158" width="146" height="190" rx="6" fill="#F1E9DA" stroke="#D8CBB8" stroke-width="2" />
+            <text x="427" y="186" text-anchor="middle" font-family="LibreBaskerville, Georgia, serif" font-size="13" font-weight="700" fill="#463D35">.journey</text>
+            <text x="427" y="206" text-anchor="middle" font-family="LibreBaskerville, Georgia, serif" font-size="11" fill="#665849">sticky timeline</text>
+            <text x="427" y="222" text-anchor="middle" font-family="LibreBaskerville, Georgia, serif" font-size="11" fill="#665849">(links to sections</text>
+            <text x="427" y="238" text-anchor="middle" font-family="LibreBaskerville, Georgia, serif" font-size="11" fill="#665849">on this page)</text>
+            <text x="427" y="260" text-anchor="middle" font-family="LibreBaskerville, Georgia, serif" font-size="11" fill="#665849">+ photo</text>
+
+            <!-- Footer -->
+            <rect x="20" y="392" width="480" height="32" rx="6" fill="#E8DCC5" stroke="#C58B70" stroke-width="2" />
+            <text x="260" y="413" text-anchor="middle" font-family="LibreBaskerville, Georgia, serif" font-size="14" font-weight="700" fill="#463D35">.site-footer - links and design credits</text>
+          </svg>
+          <figcaption>
+            Fig. 2 - The same four blocks appear in the same order on every
+            page; only the content inside the main column and the cover
+            text changes between pages.
+          </figcaption>
+        </figure>
+
+        <div class="comments-table-wrap">
           <table class="comments-table">
             <thead>
               <tr>
@@ -90,272 +186,451 @@
                 <th>Purpose</th>
               </tr>
             </thead>
+
             <tbody>
               <tr>
-                <td>Navigation Bar</td>
-                <td>Provides links to the other pages.</td>
+                <td>Navigation bar</td>
+                <td>Links to the four main pages; stays fixed to the top of the viewport while scrolling (<code>position: sticky</code>).</td>
               </tr>
+
               <tr>
-                <td>Page Cover</td>
-                <td>Displays the page title and a short introduction.</td>
+                <td>Cover</td>
+                <td>Introduces each page with a title and subtitle. On the home page the cover is a two-column grid with an overlapping photo; on the sub-pages it's a flex column with small label text above and below the title.</td>
               </tr>
+
               <tr>
-                <td>Main Content</td>
-                <td>Contains the paragraphs, tables, lists and other information.</td>
+                <td>Main content</td>
+                <td>Displays information in a two-column grid (1.6fr to 0.7fr) using tables, info cards and a pull-quote, depending on the page.</td>
               </tr>
+
               <tr>
-                <td>Journey Timeline</td>
-                <td>Provides links to the main pages and highlights the current page.</td>
+                <td>Journey timeline</td>
+                <td>Links directly to sections within the current page only - it is a page-local table of contents, not site-wide navigation, and stays sticky in the viewport as the main column scrolls past it.</td>
               </tr>
+
               <tr>
                 <td>Footer</td>
-                <td>Contains additional navigation links and credits.</td>
+                <td>Provides a second copy of the main navigation plus photography and font credits, so the acknowledgements are reachable from any page without scrolling back up.</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <h3 class="comments-subheading">Website and Page Structure Diagrams</h3>
         <p>
-          The diagrams below illustrate the overall website structure
-          and the common layout shared by all four pages.
+          Below the 700px breakpoint, the two-column grid collapses to a
+          single column: the sidebar timeline drops out of its sticky
+          position and simply appears after the main content in source
+          order, which keeps the reading order sensible on small screens.
         </p>
 
-        <figure class="comments-diagram">
-          <img
-            src="image/website-diagrams.png"
-            alt="Two diagrams showing the four website pages, shared navigation and footer, and the internal page layout">
-          <figcaption>
-            Figure 1: Overall website structure and internal page layout.
-          </figcaption>
-        </figure>
       </section>
 
-      <section class="comments-section" id="css-styles">
-        <h2><span class="section-number">03.</span> CSS Styles</h2>
+
+      <!-- 03. CSS Styles Used -->
+      <section class="comments-section">
+
+        <h2 id="css-styles">
+          <span class="section-number">03.</span>
+          CSS Styles Used
+        </h2>
+
         <p>
-          CSS is used to control the appearance and layout of the website.
-          I created reusable styles so that common elements, such as the
-          navigation bar, page covers, timeline and footer, remain
-          consistent across all pages.
+          Every style lives in <code>websystems.css</code>, with no embedded
+          <code>style</code> attributes and no <code>@import</code>. The
+          selectors fall into a few different categories, shown below with
+          one representative example of each:
         </p>
 
-        <div class="table-wrap">
+        <div class="comments-table-wrap">
           <table class="comments-table">
             <thead>
               <tr>
-                <th>CSS Selector</th>
+                <th>Selector</th>
+                <th>Type</th>
                 <th>Purpose</th>
               </tr>
             </thead>
+
             <tbody>
               <tr>
-                <td><code>body</code></td>
-                <td>Sets the main font, text colour and background colour.</td>
+                <td><code>*</code></td>
+                <td>Universal</td>
+                <td>Resets <code>box-sizing</code> to <code>border-box</code> everywhere, so padding and borders don't inflate element widths.</td>
               </tr>
+
+              <tr>
+                <td><code>body</code></td>
+                <td>Element (type)</td>
+                <td>Sets the general font, text colour and background for the whole page.</td>
+              </tr>
+
               <tr>
                 <td><code>.navbar</code></td>
-                <td>Styles the navigation bar and its links.</td>
+                <td>Class</td>
+                <td>Arranges and positions navigation links; also made sticky to the top of the viewport.</td>
               </tr>
+
               <tr>
                 <td><code>.cover</code></td>
-                <td>Controls the layout of the homepage cover.</td>
+                <td>Class</td>
+                <td>Controls the page cover layout (a CSS grid on Home, reused with extra classes on sub-pages).</td>
               </tr>
+
               <tr>
                 <td><code>#cover-name</code></td>
-                <td>Styles the main name displayed on the homepage.</td>
+                <td>ID</td>
+                <td>Styles the one-off main name heading on Home - an ID rather than a class because it only ever appears once.</td>
               </tr>
+
               <tr>
-                <td><code>.content</code></td>
-                <td>Controls the main content area.</td>
+                <td><code>.content</code>, <code>.past-content</code> …</td>
+                <td>Class (grouped)</td>
+                <td>A comma-separated selector list applies the same two-column grid rules to several page-specific container classes at once, avoiding repeated CSS.</td>
               </tr>
+
               <tr>
-                <td><code>.timeline-item</code></td>
-                <td>Styles each link in the journey timeline.</td>
+                <td><code>section[id], h2[id]</code></td>
+                <td>Attribute</td>
+                <td>
+                  Targets sections and headings that have an <code>id</code>
+                  attribute, adding scroll offset so jump-links don't hide
+                  under the sticky navbar.
+                </td>
               </tr>
+
               <tr>
-                <td><code>:hover</code></td>
-                <td>Changes the appearance of elements when the pointer moves over them.</td>
+                <td><code>.timeline-item:hover .dot</code></td>
+                <td>Descendant + pseudo-class</td>
+                <td>Selects the <code>.dot</code> span only when its parent timeline link is hovered, changing its colour.</td>
               </tr>
+
               <tr>
-                <td><code>@media</code></td>
-                <td>Adjusts the layout for smaller screen sizes.</td>
+                <td><code>.timeline::before</code></td>
+                <td>Pseudo-element</td>
+                <td>Generates the vertical connecting line down the timeline without needing an extra HTML element.</td>
+              </tr>
+
+              <tr>
+                <td><code>@media (max-width: 700px)</code></td>
+                <td>Media query</td>
+                <td>Switches the layout to a single column and reduces font sizes on small screens.</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <h3 class="comments-subheading">Examples of CSS Properties</h3>
-        <ul class="comments-list">
-          <li><code>display: grid;</code> creates the two-column page layout.</li>
-          <li><code>position: sticky;</code> keeps the journey timeline visible while scrolling.</li>
-          <li><code>border-radius</code> gives selected elements rounded corners.</li>
-          <li><code>transition</code> makes hover effects appear more smoothly.</li>
-          <li><code>max-width</code> helps control the width of content.</li>
-        </ul>
       </section>
 
-      <section class="comments-section" id="graphic-design">
-        <h2><span class="section-number">04.</span> Graphic Design</h2>
+
+      <!-- 04. Graphic Design -->
+      <section class="comments-section">
+
+        <h2 id="graphic-design">
+          <span class="section-number second-number">04.</span>
+          Graphic Design
+        </h2>
+
         <p>
-          I chose a warm and neutral colour palette to create a calm,
-          personal atmosphere. The colours are used consistently across
-          the pages to help the website feel connected without making
-          the content difficult to read.
+          This is a reflective, personal portfolio rather than a technical
+          dashboard, so I chose a warm, low-contrast palette instead of a
+          typical bright "tech" blue - cream and beige read as calm paper
+          and tea-stained notebook pages, which fits the "journal of a
+          journey" idea the site is built around. I kept the palette small on purpose, using four main colours
+          supported by a few muted shades and neutral tones. This creates
+          a consistent appearance without introducing too many unrelated colours.
         </p>
 
-        <h3 class="comments-subheading">Colour Palette</h3>
+        <div class="comments-table-wrap">
+          <table class="comments-table colour-table">
+            <thead>
+              <tr>
+                <th>Colour</th>
+                <th>Code</th>
+                <th>Use</th>
+              </tr>
+            </thead>
 
-        <div class="colour-list">
-          <div class="colour-item">
-            <span class="colour-swatch colour-background"></span>
-            <span><strong>#FAF6EA</strong> — Main background</span>
-          </div>
-          <div class="colour-item">
-            <span class="colour-swatch colour-box"></span>
-            <span><strong>#E8DCC5</strong> — Content boxes and highlights</span>
-          </div>
-          <div class="colour-item">
-            <span class="colour-swatch colour-accent"></span>
-            <span><strong>#C58B70</strong> — Accent colour and active links</span>
-          </div>
-          <div class="colour-item">
-            <span class="colour-swatch colour-muted"></span>
-            <span><strong>#8F7965</strong> — Secondary text</span>
-          </div>
-          <div class="colour-item">
-            <span class="colour-swatch colour-text"></span>
-            <span><strong>#463D35</strong> — Main text</span>
-          </div>
+            <tbody>
+              <tr>
+                <td><span class="colour-swatch cream"></span> Cream</td>
+                <td><code>#FAF6EA</code></td>
+                <td>Main background</td>
+              </tr>
+
+              <tr>
+                <td><span class="colour-swatch beige"></span> Beige</td>
+                <td><code>#E8DCC5</code></td>
+                <td>Cover and footer</td>
+              </tr>
+
+              <tr>
+                <td><span class="colour-swatch brown"></span> Brown</td>
+                <td><code>#463D35</code></td>
+                <td>Main text</td>
+              </tr>
+
+              <tr>
+                <td><span class="colour-swatch terracotta"></span> Terracotta</td>
+                <td><code>#C58B70</code></td>
+                <td>Highlights and hover effects</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         <h3 class="comments-subheading">Typography</h3>
+
+        <p>
+          I paired one readable serif for everything a visitor actually has
+          to read with two decorative display fonts used sparingly, so the
+          personality comes through without hurting legibility:
+        </p>
+
         <ul class="comments-list">
           <li>
-            <strong>Libre Baskerville:</strong> Main body text and headings.
+            <strong>Libre Baskerville:</strong> Used for the main body text,
+            navigation, section headings and most other content, providing
+            a consistent and readable serif typeface.
           </li>
+
           <li>
-            <strong class="font-better">Better Together:</strong>
-            Decorative headings.
+            <strong class="font-better">Better Together</strong>:
+            Used mainly for the large page titles and the footer name
+            "Phuong Linh", adding a decorative personal touch.
           </li>
+
           <li>
             <strong class="font-simplehandmade">Simple Handmade:</strong>
-            Selected subtitles.
+            Used for the short subtitles beneath the page titles and
+            the footer phrase "A place of memory", creating a
+            handwritten accent.
           </li>
         </ul>
 
-        <p>
-          I used different font sizes and weights to establish a clear
-          visual hierarchy. Larger headings help separate sections, while
-          smaller text is used for descriptions and supporting information.
-        </p>
+        <h3 class="comments-subheading">Layout</h3>
+
+        <ul class="comments-list">
+          <li>
+            A two-column grid (roughly 70% content, 30% sidebar) on every
+            page, echoing a magazine or blog layout where a sticky sidebar
+            keeps navigation in view beside longer reading content.
+          </li>
+          <li>
+            Large, muted section numbers ("01.", "02." …) repeated on every
+            page as a consistent visual rhythm, so a visitor recognises the
+            pattern after the first page even before reading the heading.
+          </li>
+          <li>
+            Sticky navigation bar and sticky journey sidebar, so the two
+            most useful links - "go to another page" and "jump to a
+            section" - are always within reach while scrolling.
+          </li>
+          <li>
+            A single 700px breakpoint collapses both the page grid and the
+            footer grid to one column, keeping line lengths readable on
+            phones instead of shrinking text to fit a layout built for
+            desktop.
+          </li>
+        </ul>
+
       </section>
 
-      <section class="comments-section" id="alternative-text">
-        <h2><span class="section-number">05.</span> Accessibility and Other Considerations</h2>
+
+      <!-- 05. Accessibility -->
+      <section class="comments-section">
+
+        <h2 id="alternative-text">
+          <span class="section-number">05.</span>
+          Alternative Text and CSS Accessibility
+        </h2>
+
         <p>
-          I considered accessibility and usability while developing the
-          website. Images include alternative text so that their content
-          can be understood by visitors using screen readers. I also used
-          semantic HTML elements to give the page a clearer structure.
+          The website uses HTML and CSS features to make its content easier
+          to understand and navigate, both for assistive technology and for
+          visitors browsing with styles turned off.
+        </p>
+
+        <h3 class="comments-subheading">Alternative text</h3>
+
+        <p>
+          Every <code>&lt;img&gt;</code> has a descriptive <code>alt</code>
+          attribute rather than a filename or a generic word like "photo".
+          For example, the home page photo uses
+          <code>alt="A picture of me Photo by Thien Truc"</code>, while the
+          timeline photo on the Comments page uses
+          <code>alt="A photograph accompanying the website reflection. Photo by Thien Truc"</code>.
+          Each description is specific to what that particular image is
+          doing on that particular page, so a screen reader announces
+          something meaningful rather than the same generic phrase four
+          times. None of the images are purely decorative, so none use an
+          empty <code>alt=""</code>.
+        </p>
+
+        <h3 class="comments-subheading">Browsing with CSS disabled</h3>
+
+        <p>
+          I tested the site in Firefox with "Use Style Sheets" switched off.
+          Because the HTML is written in semantic source order - navigation,
+          cover heading, main content, sidebar and footer - the page still
+          reads top to bottom in a sensible order even with every
+          <code>grid</code>, <code>flex</code> and sticky position rule gone:
         </p>
 
         <ul class="comments-list">
           <li>
-            <strong>Alternative text:</strong> Images include descriptive
-            <code>alt</code> attributes.
+            The navbar, cover heading, main text, journey links and footer
+            all still appear, just stacked as plain block elements instead
+            of a styled grid.
           </li>
           <li>
-            <strong>Semantic HTML:</strong> Elements such as
-            <code>header</code>, <code>nav</code>, <code>main</code>,
-            <code>section</code>, <code>aside</code> and
-            <code>footer</code> organise the content.
+            Every link still works, because navigation relies on real
+            <code>&lt;a href="..."&gt;</code> elements, not styled
+            <code>&lt;div&gt;</code>s or JavaScript click handlers.
           </li>
           <li>
-            <strong>Responsive design:</strong> Media queries adjust the
-            layout for smaller screens.
+            Tables and lists keep their structure (rows, cells, bullet
+            markers) from the browser's default HTML rendering, so the
+            learning-stage table on My Past and the colour table on this
+            page are still readable without the custom table styling.
           </li>
           <li>
-            <strong>Readable content:</strong> Text is left-aligned with
-            spacing between sections to make reading easier.
+            No information is carried by colour alone - the colour swatches
+            in the table above are followed by the colour's name in text
+            ("Cream", "Beige" …), so the table still makes sense in
+            greyscale or with CSS off.
           </li>
           <li>
-            <strong>Navigation:</strong> Links are provided consistently
-            across the website.
+            What is lost is purely decorative: the warm background colours,
+            the two display fonts, the sticky behaviour of the navbar and
+            timeline, and the section-number styling. None of that loss
+            affects whether the content can be read or navigated.
           </li>
         </ul>
 
-        <p>
-          I also considered how the website would appear if CSS were
-          disabled. The HTML structure still keeps the content in a
-          logical order, allowing visitors to understand the information
-          even without the visual styling.
-        </p>
+        <h3 class="comments-subheading">Semantic HTML and responsive design</h3>
+
+        <ul class="comments-list">
+          <li>
+            <strong>Semantic HTML:</strong> Elements such as
+            <code>nav</code>, <code>header</code>, <code>main</code>,
+            <code>section</code>, <code>aside</code> and <code>footer</code>
+            organise the content, which is what lets a screen reader list
+            the page's landmarks and lets the "CSS disabled" fallback above
+            stay in a logical order.
+          </li>
+
+          <li>
+            <strong>Responsive design:</strong> A single
+            <code>@media (max-width: 700px)</code> query reduces font sizes
+            and collapses the two-column grids to one column, so the site
+            stays usable on a phone without a separate mobile layout.
+          </li>
+        </ul>
+
       </section>
 
     </div>
 
+
+    <!-- Right column: Journey timeline -->
     <aside class="journey">
-      <h2>My Journey</h2>
-      <p class="journey-intro">Explore the different chapters of my story.</p>
+
+      <h2>Explore My Journey</h2>
 
       <div class="timeline">
-        <a class="timeline-item" href="index.html">
+
+        <a href="#overall-structure" class="timeline-item">
           <span class="dot"></span>
-          <span class="timeline-text">Home</span>
+          <span class="timeline-text">Overall Website Structure</span>
         </a>
-        <a class="timeline-item" href="past.html">
+
+        <a href="#internal-structure" class="timeline-item">
           <span class="dot"></span>
-          <span class="timeline-text">My Past</span>
+          <span class="timeline-text">Internal Page Structure</span>
         </a>
-        <a class="timeline-item" href="future.html">
+
+        <a href="#css-styles" class="timeline-item">
           <span class="dot"></span>
-          <span class="timeline-text">My Future</span>
+          <span class="timeline-text">CSS Styles Used</span>
         </a>
-        <a class="timeline-item active" href="comments.html">
+
+        <a href="#graphic-design" class="timeline-item">
           <span class="dot"></span>
-          <span class="timeline-text">Comments</span>
+          <span class="timeline-text">Graphic Design</span>
         </a>
+
+        <a href="#alternative-text" class="timeline-item">
+          <span class="dot"></span>
+          <span class="timeline-text">Alternative Text and CSS Accessibility</span>
+        </a>
+
       </div>
 
-      <img class="journey-image" src="image/cmt.jpg" alt="A photograph representing the design and development of my website">
+      <!-- Photo by Nguyen Vinh Thien Truc -->
+      <img
+        src="image/cmt.jpg"
+        alt="A photograph accompanying the website reflection. Photo by Thien Truc"
+        class="timeline-photo">
+
     </aside>
 
   </main>
 
+
+  <!-- Footer -->
   <footer class="site-footer">
+
     <div class="footer-content">
 
       <div class="footer-about">
-        <h3>Phuong Linh</h3>
-        <p class="footer-tagline">A journey of me.</p>
-        <p>A little space to share my experiences, interests and journey in computing.</p>
+        <h2>Phuong Linh</h2>
+        <p>A little collection of my past, present and future.</p>
       </div>
 
       <div class="footer-links">
         <h3>Explore</h3>
-        <a href="index.html">Home</a>
-        <a href="past.html">My Past</a>
-        <a href="future.html">My Future</a>
-        <a href="comments.html">Website Reflection</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="past.html">My Past</a></li>
+          <li><a href="future.html">My Future</a></li>
+          <li><a href="comments.html">Comments</a></li>
+        </ul>
       </div>
 
       <div class="footer-credits">
         <h3>Credits</h3>
-        <p>Photography: Nguyen Vinh Thien Truc</p>
-        <p>Fonts:
-          <a href="https://www.dafont.com/better-together-script.charmap?f=0" target="_blank" rel="noopener noreferrer">Better Together</a>
-          and
-          <a href="https://www.dafont.com/simple-handmade-2.font?text=a+journey+of+me&amp;back=theme" target="_blank" rel="noopener noreferrer">Simple Handmade</a>
-        </p>
+
+        <div class="credit-group">
+          <p><strong>Photography</strong></p>
+          <p>Nguyen Vinh Thien Truc</p>
+
+          <p><strong>Fonts</strong></p>
+
+          <a href="https://www.dafont.com/better-together-script.charmap?f=0"
+             target="_blank" rel="noopener noreferrer">
+            Better Together
+          </a>
+
+          <a href="https://www.dafont.com/simple-handmade-2.font"
+             target="_blank" rel="noopener noreferrer">
+            Simple Handmade
+          </a>
+
+          <a href="https://fonts.google.com/specimen/Libre+Baskerville?preview.script=Latn"
+             target="_blank" rel="noopener noreferrer">
+            Libre Baskerville
+          </a>
+
+        </div>
       </div>
 
     </div>
 
     <div class="footer-bottom">
       <p>© 2026 Phuong Linh. All rights reserved.</p>
-      <p>A place of memory.</p>
+      <p>A place of memory</p>
     </div>
+
   </footer>
 
 </body>
