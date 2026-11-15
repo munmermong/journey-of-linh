@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'LibreBaskerville';
-  src: url('font/LibreBaskerville.otf') format('opentype');
+  src: url('font/LibreBaskerville.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
