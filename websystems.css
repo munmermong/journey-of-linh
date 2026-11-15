@@ -9,14 +9,14 @@
 
 @font-face {
   font-family: 'SimpleHandmade';
-  src: url('font/SimpleHandmade.ttf') format('opentype');
+  src: url('font/SimpleHandmade.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'LibreBaskerville';
-  src: url('font/LibreBaskerville.ttf') format('opentype');
+  src: url('font/LibreBaskerville.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
